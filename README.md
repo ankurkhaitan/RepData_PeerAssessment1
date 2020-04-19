@@ -56,6 +56,12 @@ In the original repository, the data set is compressed in a ZIP file, which we u
 No pre-processing was necessary for this data set, as it is already tidy.
 
 ``` r
+## load library
+library(readr)
+library(magrittr)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
 ## If necessary, unzipping the data file, and loading it
 if (!file.exists("activity.csv") & file.exists("activity.zip")) {
     unzip("activity.zip")
